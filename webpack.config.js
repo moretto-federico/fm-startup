@@ -1,9 +1,9 @@
 var path = require('path');
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.ts',
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: '{name}.js'
+    filename: 'test.js'
   },
   module: {
     rules: [
@@ -13,6 +13,10 @@ module.exports = {
         query: {
           presets: ['@babel/env']
         }
+      },
+      {
+        test: /\.ts$/,
+        loader: 'ts-loader',
       }
     ]
   },

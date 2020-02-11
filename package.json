@@ -1,25 +1,29 @@
 {
-  "name": "fm-rxjs",
-  "version": "1.0.0",
-  "description": "A re-implementation of the rxjs library",
-  "main": "src/index.js",
+  "name": "template",
+  "version": "0.0.1",
+  "description": "Project template",
+  "main": "src/index.ts",
   "scripts": {
-    "build": "webpack",
+    "build": "webpack --mode=production",
     "test": "jest"
   },
   "keywords": [
-    "rxjs",
-    "simple"
+    "template"
   ],
   "author": "moretto.federico@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
+    "@babel/preset-typescript": "^7.8.3",
+    "@types/jest": "^25.1.2",
     "babel-jest": "^25.1.0",
     "babel-loader": "^8.0.6",
     "babel-preset-env": "^1.7.0",
     "jest": "^25.1.0",
+    "ts-jest": "^25.2.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   }
