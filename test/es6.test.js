@@ -1,3 +1,7 @@
+
+import React from 'react';
+import { shallow } from 'enzyme';
+
 describe('ES6', () => {
   test('Default Parameter Values', () => {
     const defaultParameterValues = (x = 1) => {
