@@ -22,10 +22,10 @@ function LoadObjects({ loader }) {
 }
 
 test('mounted', async () => {
-  const laoder = jest.fn().mockResolvedValue('Loaded');
-  const wrapper = mount(<LoadObjects loader={laoder} />);
+  const loader = jest.fn().mockResolvedValue('Loaded');
+  const wrapper = mount(<LoadObjects loader={loader} />);
   expect(wrapper.contains(<h1>undefined</h1>)).toBeTruthy();
-  expect(laoder).toBeCalled();
+  expect(loader).toBeCalled();
   await new Promise(setImmediate);
   wrapper.update();
   expect(wrapper.contains(<h1>Loaded</h1>)).toBeTruthy();

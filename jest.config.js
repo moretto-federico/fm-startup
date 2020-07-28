@@ -7,6 +7,9 @@ module.exports = {
     '<rootDir>/test-shim.js',
     '<rootDir>/test-setup.js'
   ],
+  setupFilesAfterEnv: [
+    './test/jest.remove.warn.react.lt19.js',
+  ],
   moduleDirectories: ['node_modules', 'src'],
   moduleFileExtensions: [
     'ts',
